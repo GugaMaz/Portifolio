@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDFG - Instituto Dom Fernando Gomes</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="header-first">
+            <nav id="nav-bar">
+                <div id="contatos">
+                    <div class="nav-header">
+                        <h4>(79) 3241-5005 / 3241-1300</h4>
+                    </div>
+                    <div class="nav-header">
+                        <h4>secretaria@idfg.com.br</h4>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="button" id="notas-alunos" onclick="modalNotasAlunos()">NOTAS DOS ALUNOS</button>
+                    <button type="button" id="acesso">ACESSOS</button>
+                </div>
+            </nav>
+        </div>
+        <div id="botton-header">
+            <div id="botton-header-inner">
+                
+                <div id="logo-idfg">
+                    <img src="../img/idfg-logo-reduzido.png" alt="logo IDFG" width="auto" height="55rem">
+                </div>
+                
+                <div id="botton-header-links">
+
+                    <ul>
+                        <li id="inicio"><a href="#">INÍCIO</a></li>
+                        <li id="colegio"><a href="#">O COLÉGIO</a></li>
+                        <li id="pedagogico"><a href="#">PEDAGÓGICO</a></li>
+                        <li id="galeria"><a href="#">GALERIA</a></li>
+                        <li id="noticias"><a href="#">NOTÍCIAS</a></li>
+                        <li id="santo"><a href="#">SANTO DO DIA</a></li>
+                        <li id="esporte"><a href="#">ESPORTE</a></li>
+                        <li id="downloads"><a href="">DOWNLOADS</a></li>
+                        <li id="ouvidoria"><a href="#">OUVIDORIA</a></li>
+                        <li id="contato"><a href="#">CONTATO</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div id="img-central">
+            <img src="../img/opening.jpg" alt="Imagem Inicial" width="100%" height="100%">
+        </div>
+    </header>
+    <main>
+        <div id="main-tittle">
+            <h1>Solicite seu Cadastro</h1>
+            <h2>Preencha o formulário abaixo que entraremos em contato</h2>
+        </div>
+        <form id="form-control">
+            <div class="total">
+                <input type="text" name="nome" placeholder="Nome do Responsável" required>
+            </div>
+            <div class="dividido">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="celular" placeholder="Telefone" required>
+            </div>
+            <div class="total">
+                <input type="text" name="aluno" placeholder="Nome do Aluno" required>
+            </div>
+            <div class="dividido">
+                <input type="date" name="nascimento" required>
+                <input type="text" name="serie" placeholder="Série/Ano Pretendido" required>
+            </div>
+            <div class="total">
+                <input type="text" name="escolaAnterior" placeholder="Escola de Orgiem" required>
+            </div>
+            <div class="areaTxt">
+                <textarea name="obs" id="observacao" placeholder="Observações"></textarea>
+            </div>
+            <button type="submit" id="form-btn">Enviar</button>
+        </form>
+    </main>
+    <!---------------------
+    MODAL Usuário e Senha
+    ----------------------->
+    <div id="modal-notas-alunos" class="modal" role="dialog" tabindex="-1">
+
+        <div class="model-inner" id="card-notas-alunos">
+            <!--Header Modal-->
+            <span class="sub-tit" id="tit-modal-notas"></span>
+            <!--Body Modal-->
+
+            <form id="dados-alunos">
+                <div id="informacoes-alunos">
+                    <div>
+                        <input type="number" name="user" placeholder="Matricula" id="matricula" required>
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Senha" id="senha" required>
+                    </div>
+                    <div id="tipo-perfil">
+                        <input type="radio" name="profAluno" id="aluno" required> Sou Aluno
+                        <input type="radio" name="profAluno" id="prof" required> Sou Professor
+                    </div>
+                    <div class="footer-modal">
+                        <button onclick="" id="modal-footer-btn" type="submit">Login</button>
+                        <button onclick="closeModal()" id="modal-footer-btn" type="button">Fechar</button>
+                    </div>
+                </div>
+            </form>
+                       
+        </div>
+
+    </div>
+
+    <!---------------------
+    MODAL Perfil do Aluno
+    ----------------------->
+    <div id="modal-perfil-alunos" class="modal-perfil-aluno" role="dialog" tabindex="-1">
+
+        <div class="model-inner" id="card-perfil-alunos">
+            <!--Header Modal-->
+            <span class="sub-tit" id="tit-modal-perfil-alunos"></span>
+            <!--Body Modal-->
+            <div id="dados-perfil">
+                <div class="foto-perfil">
+                    <img src="../img/guga.jpg" alt="perfil do aluno">
+                </div>
+                <div class="informacoes-perfil-aluno">
+                    <input type="text" placeholder="Gustavo Machado Trindade" disabled>
+                    <input type="number" placeholder="16 anos" disabled>
+                    <input type="text" placeholder="2º ano Ensino Médio" disabled>
+                    <input type="text" placeholder="Vespertino" disabled>
+                </div>
+                <div class="esporte-perfil-aluno">
+                    <label>Esporte: </label>
+                    <input type="text" placeholder="Futsal" disabled>
+                    <label>Horário: </label>
+                    <input type="number" placeholder="Matutino" disabled>
+                </div>
+            </div>
+                       
+        </div>
+
+        <div class="footer-modal-perfil">
+            <button onclick="closeModalPerfil()" id="modal-footer-btn" type="button">Fechar</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

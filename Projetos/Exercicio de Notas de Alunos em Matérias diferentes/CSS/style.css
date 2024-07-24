@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header-first {
+    background-color: #263775;
+
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row !important;
+    padding: 4px 0px;
+    margin: 0px 96px;
+}
+
+.nav-header {
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 75%;
+    margin-right: 7.5%;
+}
+
+button {
+    font-size: 15px;
+    padding: 5px;
+    margin: 0.1rem;
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    box-shadow: none;
+    
+    
+}
+
+#notas-alunos {
+    background-color: #fff;
+    color: #263775;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#notas-alunos:hover {
+    background-color: #00a8ff;
+    color: #fff;
+}
+
+#acesso {
+    background-color: #00a8ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contatos {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 35%;
+    justify-content: space-between;
+    margin-left: 11%;
+   
+}
+
+#botton-header a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+    transition: 0.3s ease;
+    font-weight: bold;
+
+}
+
+#botton-header-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15%;
+}
+
+#logo-idfg {
+    margin: 14px;
+    cursor: pointer;
+}
+
+#botton-header-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 12%;
+    list-style: none; 
+    
+}
+
+#img-central {
+    padding: 0rem 0.6rem;
+    
+}
+
+#botton-header-links ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+
+#botton-header-links li:hover a {
+    color: #263775;
+}
+
+/* Formulário de Matricula do Aluno */
+
+main {
+    background-color: rgb(240, 240, 240);
+    
+}
+
+#main-tittle {
+    background-color: rgb(240, 240, 240);
+    margin-bottom: -8rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 11.8%;
+    margin-top: 2rem;
+}
+
+#main-tittle h1 {
+    font-size: 30px;
+    color: #0a9cd8;
+}
+
+#main-tittle h2 {
+    font-size: 17.5px;
+    color: #333;
+}
+
+#form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0rem;
+    width: 98%;
+    padding: 0rem .6rem;
+    height: 40rem;
+    
+}
+
+.total input{
+    width: 75rem !important;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 10px;
+    
+}
+
+.dividido input {
+    width: 36.75rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 10px;
+}
+
+textarea {
+    width: 75rem;
+    height: 8rem;
+    border: none;
+    padding: 10px;
+}
+
+#form-btn {
+    margin-top: 1rem;
+    padding: 10px;
+    width: 76rem;
+    height: auto;
+    background-color: #00a8ff;
+    color: #fff;
+    transition: 0.3s ease;
+    border: none;
+}
+
+#form-btn:hover {
+    background-color: rgb(3, 13, 109);
+}
+
+/* MODAL NOTAS DOS ALUNOS */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 5px;
+    border: 1px solid #00a8ff;
+    border-radius: 5px;
+    width: 20%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(218, 219, 221, 0.2);
+    z-index: 9999;
+}
+
+.modal-perfil-aluno {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 5px;
+    border: 1px solid #00a8ff;
+    border-radius: 5px;
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(218, 219, 221, 0.2);
+    z-index: 9999;
+}
+
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal-close:hover,
+.modal-close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#card-notas-alunos {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    
+}
+
+.footer-modal {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem; 
+    width: 100%;
+    height: 8rem;
+    
+}
+
+#modal-footer-btn {
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    background-color: #00a8ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+#modal-footer-btn:hover {
+    background-color: rgb(44, 44, 199);
+    color: #fff;
+    font-weight: bold;
+}
+
+span {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00a8ff;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+    
+}      
+
+#dados-alunos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+#informacoes-alunos {
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 1.5rem;
+    align-items: center;
+    
+}
+
+#informacoes-alunos input {
+    display: flex;
+    align-items: center;
+    margin: 0.1rem;
+    width: 12rem;
+    border: 1px solid #0a9cd8;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#informacoes-alunos input::placeholder {
+    text-align: center;
+
+}
+
+#tipo-perfil {
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    width: 12rem;
+    align-items: center;
+    height: 5rem;
+    justify-content: center;
+}
+
+
+.footer-modal-perfil {
+    display: flex;
+    justify-content: end;
+}
+
+#dados-perfil {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.foto-perfil img {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
